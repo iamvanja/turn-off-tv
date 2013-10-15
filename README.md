@@ -6,12 +6,12 @@ It will create the animation and load the url provided in the href attribute of 
 Feedback, bugs, questions? [E-mail](mailto:vanja@gavric.org) me, I'll respond quickly!
 
 ## Demo
-- Demo can be found on [link](http://link.com).
+- Demo can be found on [link](http://vanja.gavric.org/various/turn-off-tv/).
 
 ## Getting started
-#### 1. Load jQuery and `jquery.old-tv.min.js` right before your closing `</body>` tag
+#### 1. Load jQuery and `jquery.turn-off-tv.js` right before your closing `</body>` tag
 ```html
-<script src="jquery-1.10.2.min"></script>
+<script src="jquery-1.10.2.min.js"></script>
 <script src="jquery.turn-off-tv.min.js"></script>
 ```
 
