@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>turn-off-tv demo</title>
+    <link rel="stylesheet" href="turn-off-tv.css">
+    <style>
+        /*demo specific style*/
+        .logoutBox {
+            display:block;
+            padding:14px 26px;
+            background: black;
+            color:white;
+            opacity:0.8;
+            text-decoration: none;
+            position:absolute;
+            top: 20px; 
+        }
+        .logoutBox:hover {
+            opacity:1;
+        }
+        .black {
+            left: 20px;
+        }
+        .purple {
+            background: purple;
+            right:20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="http://lorempixel.com/1920/1920/sports" alt="" width="100%" height="100%">
+    <a id="black"
+        class="logoutBox black"
+        href="http://www.google.com">
+            logout (black)
+    </a>
+    <a id="purple"
+        class="logoutBox purple"
+        href="http://www.google.com">
+            logout (black)
+    </a>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="lib/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="jquery.turn-off-tv.min.js"></script>
+
+    <script>
+        $('#black').turnOffTV();
+        $('#purple').turnOffTV({
+            tvColor : 'purple'
+        });
+    </script>
+</body>
+</html>
